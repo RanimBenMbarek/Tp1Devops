@@ -31,10 +31,10 @@ fun BookCard(item: Item) {
     val context = LocalContext.current
     Column(
         modifier = Modifier
-            .width(150.dp)
-            .height(250.dp)
+            .width(250.dp)
+            .height(350.dp)
             .background(MaterialTheme.colorScheme.background)
-            .padding(2.dp)
+            .padding(4.dp)
             .clickable {
                 val intent = Intent(context, DetailsActivity::class.java)
                 intent.putExtra("volume", item.volumeInfo)
@@ -65,7 +65,7 @@ fun BookCard(item: Item) {
             Image(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(100.dp),
+                    .height(150.dp),
                 painter = painterResource(id = R.drawable.ic_launcher_background),
                 contentDescription = null,
             )
