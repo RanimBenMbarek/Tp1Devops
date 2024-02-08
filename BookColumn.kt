@@ -36,7 +36,7 @@ import androidx.navigation.NavHostController
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Text("No matching books found")
+
                     Spacer(modifier = Modifier.height(16.dp))
                     Button(
                         onClick = {

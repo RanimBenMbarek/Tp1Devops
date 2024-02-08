@@ -57,14 +57,7 @@ fun BookGenreCard(genre: String, imageUrl: String, onGenreSelected: (String) -> 
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            // Text below the image
-            Text(
-                text = genre,
-                style = TextStyle(
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
-                )
-            )
+
         }
     }
 }
